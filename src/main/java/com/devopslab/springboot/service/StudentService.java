@@ -18,30 +18,30 @@ public class StudentService {
 
 	static {
 		//Initialize Data
-		Course course1 = new Course("Course1", "Spring", "10 Steps", Arrays
-				.asList("Learn Maven", "Import Project", "First Example",
+		Course course1 = new Course("Course1", "Spring", "Principios spring", Arrays
+				.asList("Introduccion", "Import Project", "First Example",
 						"Second Example"));
-		Course course2 = new Course("Course2", "Spring MVC", "10 Examples",
+		Course course2 = new Course("Course2", "Spring MVC", "Modelo MVC",
 				Arrays.asList("Learn Maven", "Import Project", "First Example",
 						"Second Example"));
-		Course course3 = new Course("Course3", "Spring Boot", "6K Students",
+		Course course3 = new Course("Course3", "Spring Boot", "Principios de spring boot",
 				Arrays.asList("Learn Maven", "Learn Spring",
 						"Learn Spring MVC", "First Example", "Second Example"));
 		Course course4 = new Course("Course4", "Maven",
-				"Most popular maven course on internet!", Arrays.asList(
+				"Maven para principiantes", Arrays.asList(
 						"Pom.xml", "Build Life Cycle", "Parent POM",
 						"Importing into Eclipse"));
 
-		Student ranga = new Student("Student1", "Ranga Karanam",
-				"Hiker, Programmer and Architect", new ArrayList<>(Arrays
+		Student pedro = new Student("1", "Delgado",
+				"Perico, Arquitecto Devops", new ArrayList<>(Arrays
 						.asList(course1, course2, course3, course4)));
 
-		Student satish = new Student("Student2", "Satish T",
-				"Hiker, Programmer and Architect", new ArrayList<>(Arrays
+		Student eddy = new Student("2", "Merckx",
+				"Eddy, Programador", new ArrayList<>(Arrays
 						.asList(course1, course2, course3, course4)));
 
-		students.add(ranga);
-		students.add(satish);
+		students.add(pedro);
+		students.add(eddy);
 	}
 
 	public List<Student> retrieveAllStudents() {
